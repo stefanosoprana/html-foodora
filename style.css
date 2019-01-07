@@ -1,0 +1,303 @@
+
+/**********************************************/
+/**********************************************/
+/**** PROGETTO: FoodoraReplica - style.css ****/
+/**********************************************/
+/**********************************************/
+
+/**********************************************/
+/************* REGOLE GENERALI ****************/
+/**********************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#main-container {
+  width: 100%;
+}
+
+.foodora_text {
+  color: #D70E64;
+}
+
+/************************************************/
+/************* OGGETTI RICORRENTI ***************/
+/************************************************/
+
+
+
+/**********************************************/
+/************* SEZIONI DOCUMENTO *************/
+/**********************************************/
+
+nav {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 8px 20px -2px lightgrey;
+}
+
+nav .nav_left {
+  float: left;
+  padding-left: 30px;
+  height: 100%;
+  width: 30%;
+}
+
+nav .nav_right {
+  float: right;
+  height: 100%;
+}
+
+nav .nav_left img {
+  margin-top: 10px;
+  height: 30px;
+}
+
+nav .nav_right .lang, nav .nav_right .login,  nav .nav_right .cart {
+  float: left;
+  height: 100%;
+  padding: 0 30px;
+  line-height: 50px;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+nav .nav_right .lang a:not(:last-child) {
+  padding: 5px 5px;
+  border-right: 1px solid black;
+}
+
+nav .nav_right .lang a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav .nav_right .login a, nav .nav_right .cart, nav .nav_right .cart a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav_right .login a img {
+  margin-right: 10px;
+}
+
+
+/*--- jumbo ---*/
+
+.jumbo {
+  height: 500px;
+  width: 100%;
+  background-image: url(assets/hero-home-no.jpg);
+  background-position: 112% 40%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.title {
+  padding-bottom: 65px;
+}
+
+.search {
+  height: 80px;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 8px 20px -2px lightgrey;
+}
+
+.search a {
+  display: inline-block;
+}
+
+.search span {
+  line-height: 60px;
+  padding: 0 7.5px;
+}
+
+.address {
+  display: inline-block;
+  height: 100%;
+  width: 500px;
+  margin: 0 10px;
+  padding: 0 10px;
+  border: 1px solid lightgray;
+}
+
+.btn {
+  height: 100%;
+  line-height: 60px;
+  padding: 0 40px;
+  text-transform: uppercase;
+  color: white;
+  background: #D70E64;
+}
+.containerWrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.wrapTitoli {
+  position: relative;
+}
+.titoloPrincipale {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  z-index: -1;
+}
+.titoloPrincipale h2 {
+  font-size: 180px;
+  letter-spacing: 15px;
+  text-transform: capitalize;
+  color: #efefef;
+}
+.sottoTitolo small {
+  font-size: 40px;
+}
+.wrapCardContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  height: 250px;
+  width: 200px;
+  background-position: center;
+  background-size: auto 250px;
+  background-repeat: no-repeat;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+.titoloCard {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.card.active {
+  background-size: auto 260px;
+}
+.square {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #D70E64;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+}
+.card.active .square {
+  display: flex;
+}
+.square i {
+  font-size: 20px;
+}
+.berum {
+  background-image: url(assets/city-tile-Bærum.jpg);
+}
+.bergen {
+  background-image: url(assets/city-tile-Bergen.jpg);
+}
+.drammen {
+  background-image: url(assets/city-tile-Drammen.jpg);
+}
+.oslo {
+  background-image: url(assets/city-tile-Oslo.jpg);
+}
+.lettera {
+  display: none;
+  position: absolute;
+  bottom: -49px;
+  left: -16px;
+  font-size: 200px;
+  color: #D70E64;
+  opacity: 0.5;
+}
+
+.card.active .lettera {
+  display: block;
+}
+
+.wrap-app {
+  margin: 200px 0;
+  height: 450px;
+}
+
+.wrap-app > .wrapTitoli {
+  width: 80%;
+  margin: 0 auto
+}
+
+.app-main {
+  height: 80%;
+  width: 100%;
+  margin-top: 15px;
+  background: #D70E64;
+}
+
+.app-main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  float: left;
+  height: 100%;
+  width: 50%;
+  background: #D70E64;
+  padding-left: 120px;
+}
+
+.app-main-right {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 50%;
+  background: #D70E64;
+}
+
+.app-main-right img {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  height: 650px;
+}
+
+.text {
+  color: white;
+}
+
+.text h2 {
+  margin: 10px 0;
+}
+
+.appstore, .playstore {
+  float: left;
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+  border: 1px solid white;
+}
